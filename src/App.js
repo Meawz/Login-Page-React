@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import logo from './images/logo1.png'
 import "./App.css";
-import Download from "./Download";
+import Download1 from "./DownloadTest1";
+import Download2 from "./DownloadTest2";
 
 
 function App() {
@@ -81,7 +82,7 @@ function App() {
   return (
     <div className="app">
       <div className="login-form">
-        {isSubmitted ? <Download /> : renderForm}
+        {isSubmitted ? <><Download1 /><Download2 /></>: renderForm}
       </div>
     </div>
   );
